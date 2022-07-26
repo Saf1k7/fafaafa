@@ -1,0 +1,717 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Inter:wght@200;
+
+400;600;700;800;900&family=Playfair+Display:wght@400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  white-space: normal;
+  font-style: normal;
+  color: #2F2E2E;
+  font-family: Inter;
+  font-weight: normal;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 24;
+  font-weight: 400;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: white;
+}
+
+.navbar {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 47px 0;
+}
+
+.logo {
+  position: relative;
+  z-index: 3;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 119%;
+}
+
+.logo a {
+  color: #2F2E2E;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  position: relative;
+  z-index: 3;
+  margin-left: 106px;
+}
+
+.menu__item:last-child {
+  margin-left: 64px;
+}
+
+.menu-item-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2F2E2E;
+}
+
+.menu-item-link:hover {
+  color: #7c6b6b;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.house__item {
+  position: relative;
+  max-width: 691px;
+  z-index: 2;
+  background: linear-gradient(91.1deg, rgba(244, 246, 245, 0.9) -7.89%, rgba(255, 255, 255, 0.9) 132.55%);
+  margin-top: 283px;
+  margin-bottom: 120px;
+  padding: 138px 150px 139px 100px;
+}
+
+.house__title {
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 51px;
+  line-height: 60px;
+}
+
+.house__text {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 39px;
+}
+
+.house__img {
+  top: 188px;
+  right: 0;
+  position: absolute;
+  max-width: 1150px;
+  width: 100%;
+  height: auto;
+}
+
+.services {
+  background: rgba(37, 77, 77, 0.2);
+  padding-top: 16px;
+  padding-bottom: 65px;
+}
+
+.services__title {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 800;
+  font-size: 51px;
+  line-height: 60px;
+}
+
+.services__items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.item-serices__title {
+  font-family: "Playfair Display";
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+.item-serices__text {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 9px;
+}
+
+.aboutus__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 76px;
+}
+
+.aboutus__img {
+  max-width: 735px;
+  width: 100%;
+  height: auto;
+}
+
+.aboutus__item {
+  max-width: 460px;
+  margin-top: 141px;
+  margin-left: 30px;
+}
+
+.item-aboutus__title {
+  font-family: "Playfair Display";
+  font-size: 51px;
+  line-height: 60px;
+  font-weight: 800;
+}
+
+.item-aboutus__text {
+  font-family: "Playfair Display";
+  font-size: 31px;
+  line-height: 47px;
+  margin-top: 27px;
+}
+
+.item-aboutus__read-more {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 36px;
+  color: #2F2E2E;
+}
+
+.projects__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 95px;
+  flex-wrap: wrap;
+}
+
+.projects__logo {
+  font-family: "Playfair Display";
+  font-size: 51px;
+  line-height: 60px;
+  font-weight: 800;
+  margin-right: 20px;
+}
+
+.projects__menu {
+  display: flex;
+  gap: 120px;
+}
+
+.projects__menu-item-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F2E2E;
+}
+
+.projects__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 104px;
+  row-gap: 86px;
+  margin-top: 71px;
+}
+
+.projects__img {
+  max-width: 344px;
+  width: 100%;
+  height: auto;
+}
+
+.projects__text {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 13px;
+}
+
+.testimonial {
+  padding-bottom: 150px;
+}
+
+.testimonial__title {
+  padding-top: 90px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 51px;
+  line-height: 60px;
+  color: #000000;
+  font-weight: 900;
+}
+
+.testimonial__items {
+  display: flex;
+  column-gap: 130px;
+  flex-wrap: wrap;
+}
+
+.testimonial__item {
+  display: flex;
+  align-items: center;
+  margin-top: 78px;
+}
+
+.item-testimonial__img {
+  max-width: 151px;
+}
+
+.item-testimonial__item {
+  margin-left: 29px;
+}
+
+.item-testimonial__title {
+  font-family: "Playfair Display";
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 600;
+}
+
+.item-testimonial__text {
+  margin-top: 16px;
+  max-width: 307px;
+  font-family: "Playfair Display";
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.footer {
+  background: #2E2F32;
+}
+
+.footer__items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  justify-content: space-between;
+  color: #FAFAFA;
+  padding-bottom: 44px;
+}
+
+.footer__title-archiweb {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  margin-top: 47px;
+}
+
+.footer__text {
+  font-size: 17px;
+  line-height: 171%;
+  max-width: 287px;
+  margin-top: 7px;
+}
+
+.footer__icons {
+  margin-top: 38px;
+}
+
+.footer__icon {
+  margin-right: 36px;
+}
+
+.footer__title {
+  margin-top: 57px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 57px;
+  margin-bottom: 11px;
+}
+
+.footer__link-item {
+  margin-top: 7px;
+}
+
+.footer__link {
+  color: #FAFAFA;
+}
+
+.footer__map {
+  max-width: 295px;
+}
+
+@media (max-width: 1265px) {
+  .aboutus__items {
+    padding-top: 50px;
+  }
+
+  .aboutus__img {
+    max-width: 100%;
+  }
+
+  .aboutus__item {
+    margin-left: 0px;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .menu__item {
+    margin-left: 60px;
+  }
+
+  .menu__item:last-child {
+    margin-left: 30px;
+  }
+
+  .projects__logo {
+    font-size: 36px;
+  }
+
+  .projects__menu {
+    gap: 30px;
+  }
+
+  .projects__menu-item-link {
+    font-size: 18px;
+  }
+
+  .projects__items {
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 30px;
+  }
+
+  .testimonial__item {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    padding: 35px 0;
+  }
+
+  .navbar {
+    height: 50px;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 8;
+    cursor: pointer;
+  }
+
+  .burger span {
+    position: absolute;
+    background-color: #000000;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .burger:before,
+  .burger:after {
+    content: "";
+    background-color: #000000;
+    transition: all 0.3s ease 0s;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  .burger:before::before,
+  .burger:after::before {
+    top: 0;
+  }
+
+  .burger:before::after,
+  .burger:after::after {
+    bottom: 0;
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .burger._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .burger._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .menu {
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: top 0.6s ease 0s;
+    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu._active {
+    top: 0;
+  }
+
+  .menu__item {
+    margin: 20px auto;
+  }
+
+  .menu__item:last-child {
+    margin: 0 auto;
+  }
+
+  .menu .menu-item-link {
+    font-size: 36px;
+  }
+
+  .house__item {
+    margin-top: 70px;
+    max-width: 100%;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+  }
+
+  .house__img {
+    top: 0px;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .testimonial__title {
+    font-size: 36px;
+    padding-top: 50px;
+  }
+
+  .testimonial__item {
+    margin-top: 50px;
+  }
+
+  .item-testimonial__img {
+    max-width: 100px;
+  }
+
+  .item-testimonial__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .item-testimonial__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 605px) {
+  .projects__menu {
+    gap: 22px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .house__item {
+    padding: 20px 20px;
+  }
+
+  .house__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .house__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .services__title {
+    font-size: 40px;
+  }
+
+  .item-aboutus__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .item-aboutus__text {
+    font-size: 25px;
+    line-height: 50px;
+    margin-top: 12px;
+  }
+
+  .item-aboutus__read-more {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .testimonial__item {
+    margin-top: 30px;
+  }
+
+  .item-testimonial__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .item-testimonial__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-wigth: 1339.98px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-wigth: 991.98px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-wigth: 767.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-wigth: 479.98px) {
+  .container {
+    max-width: none;
+  }
+}
